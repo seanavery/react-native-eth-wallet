@@ -1,5 +1,5 @@
 import Wallet from './Wallet';
 
-export {
-  Wallet
+module.exports = {
+  Wallet: new Wallet()
 }

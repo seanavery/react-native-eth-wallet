@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Wallet } from '../actions/index';
+
 import {
   View,
   Text,
@@ -14,6 +16,11 @@ export default class CreateAccount extends Component {
       password: '',
       password_check : ''
     }
+  }
+
+  componentWillMount() {
+    console.log('Wallet', Wallet );
+    Wallet.load();
   }
 
   handleSubmit() {
