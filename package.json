@@ -9,6 +9,7 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "eth-lightwallet": "^2.5.4",
+    "ethereumjs-tx": "^1.2.5",
     "react": "15.4.2",
     "react-native": "0.42.3"
   },
