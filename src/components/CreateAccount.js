@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import {
   View,
+  Text,
   TextInput,
 } from 'react-native';
 
@@ -16,14 +17,16 @@ export default class CreateAccount extends Component {
   handleSubmit() {
 
   }
-  
+
   render() {
     return (
       <View>
+        <Text>checking</Text>
         <TextInput
-          style{{height: 40}}
-          placeHolder="Enter Password"
+          style={{height: 100, width: 300}}
+          placeholder="Enter password"
           onChangeText={(text) => this.setState({password: text})}
+          secureTextEntry={true}
         />
 
       </View>
