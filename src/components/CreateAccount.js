@@ -4,6 +4,7 @@ import {
   View,
   Text,
   TextInput,
+  TouchableHighlight,
 } from 'react-native';
 
 export default class CreateAccount extends Component {
@@ -16,7 +17,7 @@ export default class CreateAccount extends Component {
   }
 
   handleSubmit() {
-
+    console.log('handling submit...')
   }
 
   render() {
@@ -35,6 +36,10 @@ export default class CreateAccount extends Component {
           onChangeText={(text) => this.setState({password_check: text})}
           secureTextEntry={true}
         />
+        <TouchableHighlight onPress={this.handleSubmit}>
+          <View style={{height: 200, backgroundColor: 'darkgrey'}}>
+          </View>
+        </TouchableHighlight>
       </View>
     );
   }
