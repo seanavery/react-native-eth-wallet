@@ -1,5 +1,5 @@
 import CreateAccount from './CreateAccount';
 
-exports = {
+export {
   CreateAccount,
 }
