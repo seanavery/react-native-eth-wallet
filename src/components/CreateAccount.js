@@ -10,7 +10,8 @@ export default class CreateAccount extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      password: ''
+      password: '',
+      password_check : ''
     }
   }
 
@@ -24,11 +25,16 @@ export default class CreateAccount extends Component {
         <Text>checking</Text>
         <TextInput
           style={{height: 100, width: 300}}
-          placeholder="Enter password"
+          placeholder="enter password"
           onChangeText={(text) => this.setState({password: text})}
           secureTextEntry={true}
         />
-
+        <TextInput
+          style={{height: 100, width: 300}}
+          placeholder="re-enter password"
+          onChangeText={(text) => this.setState({password_check: text})}
+          secureTextEntry={true}
+        />
       </View>
     );
   }
