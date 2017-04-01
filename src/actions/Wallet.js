@@ -1,6 +1,6 @@
 import Promise from 'bluebird';
 import Tx from 'ethereumjs-tx';
-import { keystore, txUti}
+// import { keystore } from 'eth-lightwallet';
 import Web3 from 'web3';
 
 export default class Wallet {
@@ -24,18 +24,18 @@ export default class Wallet {
   }
 
   createAccount(password) {
-    console.log('keystore', keystore);
-    return new Promise((resolve, reject) => {
-      // first, set local global to password
-      keystore.createVault({
-        password: this.password
-      }).then((error, pwDerivedKey) => {
-        console.log('pwDerivedKey', pwDerivedKey);
-      }).catch((error) => {
-        reject(error);
-      });
-      // then, save hashed password in
-    });
+    // console.log('keystore', keystore);
+    // return new Promise((resolve, reject) => {
+    //   // first, set local global to password
+    //   keystore.createVault({
+    //     password: this.password
+    //   }).then((error, pwDerivedKey) => {
+    //     console.log('pwDerivedKey', pwDerivedKey);
+    //   }).catch((error) => {
+    //     reject(error);
+    //   });
+    //   // then, save hashed password in
+    // });
   }
 
   web3() {
