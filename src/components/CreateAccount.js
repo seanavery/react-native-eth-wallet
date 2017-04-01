@@ -25,6 +25,7 @@ export default class CreateAccount extends Component {
 
   handleSubmit() {
     console.log('handling submit...')
+    Wallet.createAccount(); =
   }
 
   render() {
