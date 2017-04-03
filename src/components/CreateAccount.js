@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 // shim to nodify web3 crytpo and fs libraries
-import '../../shim';
 import { Wallet } from '../actions/index';
 
 import {
@@ -27,7 +26,7 @@ export default class CreateAccount extends Component {
 
   handleSubmit() {
     console.log('handling submit...')
-    // Wallet.createAccount();
+    Wallet.createAccount();
   }
 
   render() {
