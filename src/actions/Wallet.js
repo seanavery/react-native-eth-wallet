@@ -1,7 +1,7 @@
 import Promise from 'bluebird';
-import Tx from 'ethereumjs-tx';
-import { keystore } from 'eth-lightwallet';
-import Web3 from 'web3';
+// import Tx from 'ethereumjs-tx';
+// import { keystore } from 'eth-lightwallet';
+// import Web3 from 'web3';
 
 export default class Wallet {
   constructor() {
