@@ -1,8 +1,8 @@
-// import shim
+// import browserify shim
 import '../../shim.js';
 import Promise from 'bluebird';
 // import Tx from 'ethereumjs-tx';
-// import { keystore } from 'eth-lightwallet';
+import { keystore, txutils, signing } from 'eth-lightwallet/index';
 import Web3 from 'web3';
 
 export default class Wallet {
