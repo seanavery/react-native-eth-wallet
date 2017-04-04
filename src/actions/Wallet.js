@@ -12,18 +12,16 @@ export default class Wallet {
 
   load() {
     console.log('hit load function');
-    console.log('Web3', Web3);
-    // return new Promise((resolve, reject) => {
-    //   Promise.delay(0)
-    //   .then(() => {
-    //     console.log('Web3', Web3);
-    //     let web3 = new Web3();
-    //     web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
-    //     console.log('web3', web3);
-    //   }).catch((error) => {
-    //     reject(error);
-    //   })
-    // });
+    return new Promise((resolve, reject) => {
+      Promise.delay(0)
+      .then(() => {
+        let web3 = new Web3();
+        web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
+        console.log('web3', web3);
+      }).catch((error) => {
+        reject(error);
+      });
+    });
   }
 
   createAccount(password1, password2) {
